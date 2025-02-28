@@ -64,3 +64,7 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
