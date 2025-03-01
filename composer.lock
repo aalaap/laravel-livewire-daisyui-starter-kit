@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a06ce93ad2f64a94826162c787d681f",
+    "content-hash": "f3265ba3d8346135c19a9f3c4bd5457a",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,79 @@
                 }
             ],
             "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "laravel/folio",
+            "version": "v1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/folio.git",
+                "reference": "593e2b53104008ec019c0079355dcd878a1f5d1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/folio/zipball/593e2b53104008ec019c0079355dcd878a1f5d1e",
+                "reference": "593e2b53104008ec019c0079355dcd878a1f5d1e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.19|^11.0|^12.0",
+                "illuminate/container": "^10.19|^11.0|^12.0",
+                "illuminate/contracts": "^10.19|^11.0|^12.0",
+                "illuminate/filesystem": "^10.19|^11.0|^12.0",
+                "illuminate/pipeline": "^10.19|^11.0|^12.0",
+                "illuminate/routing": "^10.19|^11.0|^12.0",
+                "illuminate/support": "^10.19|^11.0|^12.0",
+                "illuminate/view": "^10.19|^11.0|^12.0",
+                "php": "^8.1",
+                "spatie/once": "^3.1",
+                "symfony/console": "^6.0|^7.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.6.0|^9.0|^10.0",
+                "pestphp/pest": "^2.5|^3.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Folio\\FolioServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Laravel\\Folio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Page based routing for Laravel.",
+            "homepage": "https://github.com/laravel/folio",
+            "keywords": [
+                "laravel",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/folio/issues",
+                "source": "https://github.com/laravel/folio"
+            },
+            "time": "2025-01-26T19:34:47+00:00"
         },
         {
             "name": "laravel/framework",
