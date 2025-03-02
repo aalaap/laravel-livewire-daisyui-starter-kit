@@ -32,17 +32,11 @@
 
                     <p>We suggest starting with the following.</p>
 
-                    <ul class="list bg-base-200 rounded-box shadow-md">
-                        <li class="list-row">
-                            <div>Read the <a href="https://laravel.com/docs" target="_blank">Laravel documentation</a></div>
-                        </li>
-                        <li class="list-row">
-                            <div>Watch video tutorials at <a href="https://laracasts.com" target="_blank">Laracasts</a></div>
-                        </li>
-                        <li class="list-row">
-                            <div>Check out daisyUI <a href="https://daisyui.com/components/list/" target="_blank">components</a></div>
-                        </li>    
-                    </ul>
+                    <ul class="steps steps-vertical">
+                        <li class="step step-info"><div class="text-left">Read the <a href="https://laravel.com/docs" target="_blank" class="link">Laravel documentation</a></span></li>
+                        <li class="step step-info"><div class="text-left">Watch video tutorials at <a href="https://laracasts.com" target="_blank" class="link">Laracasts</a></div></li>
+                        <li class="step step-info"><div class="text-left">Check out daisyUI <a href="https://daisyui.com/components/list/" target="_blank" class="link">components</a></div></li>
+                      </ul>
 
                     <div class="card-actions justify-end">
                         <button class="btn btn-primary">
