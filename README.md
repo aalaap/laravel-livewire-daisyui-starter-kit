@@ -3,7 +3,8 @@
 ## Introduction
 
 This [Laravel](https://laravel.com) + [Livewire](https://livewire.laravel.com) + [daisyUI](https://daisyui.com) starter
-kit provides a robust, modern starting point for building Laravel applications with a Livewire frontend and daisyUI components.
+kit provides a robust, modern starting point for building Laravel applications with a Livewire frontend and daisyUI
+components.
 
 This Livewire starter kit utilizes Livewire 3, Laravel [Volt](https://livewire.laravel.com/docs/volt),
 [Folio](https://laravel.com/docs/12.x/folio), TypeScript, [Tailwind CSS](https://tailwindcss.com) 4 and daisyUI 5.
@@ -22,13 +23,19 @@ directory.
 daisyUI is a UI component library built on top of Tailwind CSS, which provides ready-made component classes that are
 fully themable and composable.
 
-## Motivation
+### Motivation
 
-Starting with Laravel 12, starter kits are now simply git repos that can be cloned and worked upon, rather than projects
-created live by the installer by adding components like Breeze and Jetstream. This makes it easier to offer many
-different combinations of technologies, so there's something for everyone.
+Laravel 12's new starter kits are offered with React/Vue + Inertia + shadcn/ui or Livewire with Flux. While
+shadcn/ui is open source, Flux is not. While the new starter kit does include some Flux components for free, the
+documentation for these is also paywalled, which doesn't seem right to me. daisyUI is a good component library that's
+open source, just like shadcn/ui, and it works with plain HTML, which makes it a great fit for Blade and Livewire
+components.
 
-I've been using daisyUI for a while and I'm building this starter kit with that for my own needs, but I do hope someone
+The new starter kits are now simply git repos that can be cloned and worked upon, rather than projects created live by
+the installer by adding components like Breeze and Jetstream. This makes it easier for anyone to create and offer any
+different combinations of technologies as they see fit.
+
+I've been using daisyUI for a while and I'm building this starter kit with it for my own needs, but I do hope someone
 else finds it useful as well.
 
 ## Status
@@ -44,6 +51,15 @@ Documentation for all Laravel starter kits can be found on the [Laravel website]
 Documentation for daisyUI is on the [official website](https://daisyui.com/docs).
 
 Docs specific to this starter kit will be included here.
+
+## Components
+
+The following components are available:
+
+| daisyUI                  | Flux           |
+| ------------------------ | -------------- |
+| `x-daisyui.navlist`      | `flux:navlist` |
+| `x-daisyui.navlist-item` | `flux:navitem` |
 
 ## Contributing
 
