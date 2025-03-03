@@ -60,6 +60,10 @@ The following components are available:
 | ------------------------ | -------------- |
 | `x-daisyui.navlist`      | `flux:navlist` |
 | `x-daisyui.navlist-item` | `flux:navitem` |
+| `x-daisyui.button`       | `flux:button`  |
+
+> **Note:** Not all components will be drop-in replacements. For eg. the Flux button component has variants `danger` and
+> `filled`, but daisyUI components have `warning` (or `error`) and `neutral` respectively. See daisyUI docs for more info.
 
 ## Contributing
 

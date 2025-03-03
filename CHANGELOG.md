@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-03-03
+
+-   Added `x-daisyui.button` component
+
 ## 2025-03-02
 
 -   Added `x-daisyui.navlist` and `x-daisyui.navlist-item` components
