@@ -92,9 +92,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
         />
 
         <div class="flex items-center justify-end">
-            <flux:button type="submit" variant="primary" class="w-full">
+            <x-daisyui.button type="submit" variant="primary" class="w-full">
                 {{ __('Create account') }}
-            </flux:button>
+            </x-daisyui.button>
         </div>
     </form>
 

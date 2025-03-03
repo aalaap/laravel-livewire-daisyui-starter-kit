@@ -54,6 +54,6 @@ new #[Layout('components.layouts.auth')] class extends Component {
             placeholder="Password"
         />
 
-        <flux:button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</flux:button>
+        <x-daisyui.button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</x-daisyui.button>
     </form>
 </div>

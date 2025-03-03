@@ -103,7 +103,7 @@ new class extends Component {
 
             <div class="flex items-center gap-4">
                 <div class="flex items-center justify-end">
-                    <flux:button variant="primary" type="submit" class="w-full">{{ __('Save') }}</flux:button>
+                    <x-daisyui.button variant="primary" type="submit" class="w-full">{{ __('Save') }}</x-daisyui.button>
                 </div>
 
                 <x-action-message class="me-3" on="profile-updated">
