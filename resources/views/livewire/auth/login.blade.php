@@ -104,9 +104,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
             />
 
             @if (Route::has('password.request'))
-                <flux:link class="absolute right-0 top-0 text-sm" href="{{ route('password.request') }}" wire:navigate>
+                <x-daisyui.link class="absolute right-0 top-0 text-sm" href="{{ route('password.request') }}" wire:navigate>
                     {{ __('Forgot your password?') }}
-                </flux:link>
+                </x-daisyui.link>
             @endif
         </div>
 
@@ -120,6 +120,6 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <div class="space-x-1 text-center text-sm text-zinc-600 dark:text-zinc-400">
         Don't have an account?
-        <flux:link href="{{ route('register') }}" wire:navigate>Sign up</flux:link>
+        <x-daisyui.link variant="primary" href="{{ route('register') }}" wire:navigate>Sign up</x-daisyui.link>
     </div>
 </div>
