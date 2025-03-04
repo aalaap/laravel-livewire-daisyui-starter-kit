@@ -56,12 +56,13 @@ Docs specific to this starter kit will be included here.
 
 The following components are available:
 
-| daisyUI                  | Flux           |
-| ------------------------ | -------------- |
-| `x-daisyui.navlist`      | `flux:navlist` |
-| `x-daisyui.navlist-item` | `flux:navitem` |
-| `x-daisyui.button`       | `flux:button`  |
-| `x-daisyui.link`         | `flux:link`    |
+| daisyUI                  | Flux                              |
+| ------------------------ | --------------------------------- |
+| `x-daisyui.navlist`      | `flux:navlist`                    |
+| `x-daisyui.navlist-item` | `flux:navitem`                    |
+| `x-daisyui.button`       | `flux:button`                     |
+| `x-daisyui.link`         | `flux:link`                       |
+| `x-daisyui.heading`      | `flux:heading`, `flux:subheading` |
 
 > **Note:** Not all components will be drop-in replacements. For eg. the Flux button component has variants `danger` and
 > `filled`, but daisyUI components have `warning` (or `error`) and `neutral` respectively. See daisyUI docs for more info.

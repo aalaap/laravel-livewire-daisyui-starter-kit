@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-03-04
+
+-   Added `x-daisyui.heading` component
+
 ## 2025-03-03
 
 -   Added `x-daisyui.button` component
