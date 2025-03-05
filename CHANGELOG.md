@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-03-05
+
+-   Added `x-daisyui.separator` component
+
 ## 2025-03-04
 
 -   Added `x-daisyui.heading` component

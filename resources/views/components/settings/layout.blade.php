@@ -15,15 +15,11 @@
         </x-daisyui.navlist>
     </div>
 
-    <flux:separator class="md:hidden" />
+    <x-daisyui.separator class="md:hidden"></x-daisyui.separator>
 
     <div class="flex-1 self-stretch max-md:pt-6">
         <x-daisyui.heading class="mb-2">{{ $heading ?? ''}}</x-daisyui.heading>
-        
         <x-daisyui.heading type="sub">{{ $subheading ?? ''}}</x-daisyui.heading>
-
-        {{-- <div class="text-lg">text-lg {{ $heading ?? '' }}</div>
-        <div class="text-xl">text-xl {{ $heading ?? '' }}</div> --}}
 
         <div class="mt-5 w-full max-w-lg">
             {{ $slot }}

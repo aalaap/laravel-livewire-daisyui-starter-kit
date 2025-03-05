@@ -56,20 +56,26 @@ Docs specific to this starter kit will be included here.
 
 The following components are available:
 
-| daisyUI                  | Flux                              |
-| ------------------------ | --------------------------------- |
-| `x-daisyui.navlist`      | `flux:navlist`                    |
-| `x-daisyui.navlist-item` | `flux:navitem`                    |
-| `x-daisyui.button`       | `flux:button`                     |
-| `x-daisyui.link`         | `flux:link`                       |
-| `x-daisyui.heading`      | `flux:heading`, `flux:subheading` |
+| daisyUI                  | Flux                              | Note                                                       |
+| ------------------------ | --------------------------------- | ---------------------------------------------------------- |
+| `x-daisyui.navlist`      | `flux:navlist`                    |                                                            |
+| `x-daisyui.navlist-item` | `flux:navitem`                    |                                                            |
+| `x-daisyui.button`       | `flux:button`                     |                                                            |
+| `x-daisyui.link`         | `flux:link`                       |                                                            |
+| `x-daisyui.heading`      | `flux:heading`, `flux:subheading` | Can be used for both headings.                             |
+| `x-daisyui.separator`    | `flux:separator`                  | `variant` behaves differently; `direction`, `align` added. |
+
+In addition to the explicit attributes (like `variant` and `align`), you can pass in any daisyUI or Tailwind CSS class
+name and it will be applied to the component. Other HTML attributes will also be passed as-is.
 
 > **Note:** Not all components will be drop-in replacements. For eg. the Flux button component has variants `danger` and
-> `filled`, but daisyUI components have `warning` (or `error`) and `neutral` respectively. See daisyUI docs for more info.
+> `filled`, but daisyUI components have `warning` (or `error`) and `neutral` respectively. See daisyUI docs for more
+> info.
 
 ## Contributing
 
-Feel free to open issues or send pull requests. The contribution guide for the original starter kit can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Feel free to open issues or send pull requests. The contribution guide for the original starter kit can be found in the
+[Laravel documentation](https://laravel.com/docs/contributions).
 
 ## Code of Conduct
 
