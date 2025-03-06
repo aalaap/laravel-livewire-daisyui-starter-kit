@@ -80,7 +80,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <form wire:submit="login" class="flex flex-col gap-6">
         <!-- Email Address -->
-        <flux:input
+        <x-daisyui.input
             wire:model="email"
             label="{{ __('Email address') }}"
             type="email"
@@ -89,11 +89,12 @@ new #[Layout('components.layouts.auth')] class extends Component {
             autofocus
             autocomplete="email"
             placeholder="email@example.com"
+            :errors="$errors"
         />
 
         <!-- Password -->
         <div class="relative">
-            <flux:input
+            <x-daisyui.input
                 wire:model="password"
                 label="{{ __('Password') }}"
                 type="password"
@@ -101,10 +102,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
                 required
                 autocomplete="current-password"
                 placeholder="Password"
-            />
+                :errors="$errors"
+                />
 
             @if (Route::has('password.request'))
-                <x-daisyui.link class="absolute right-0 top-0 text-sm" href="{{ route('password.request') }}" wire:navigate>
+                <x-daisyui.link class="absolute right-0 top-2 text-xs" href="{{ route('password.request') }}" wire:navigate>
                     {{ __('Forgot your password?') }}
                 </x-daisyui.link>
             @endif

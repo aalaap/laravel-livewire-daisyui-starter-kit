@@ -45,7 +45,14 @@ new class extends Component {
                 </x-daisyui.heading>
             </div>
 
-            <flux:input wire:model="password" id="password" label="{{ __('Password') }}" type="password" name="password" />
+            <x-daisyui.input
+                wire:model="password"
+                id="password"
+                label="{{ __('Password') }}"
+                type="password"
+                name="password"
+                :errors="$errors"
+            />
 
             <div class="flex justify-end space-x-2">
                 <flux:modal.close>

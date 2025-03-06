@@ -43,7 +43,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <form wire:submit="confirmPassword" class="flex flex-col gap-6">
         <!-- Password -->
-        <flux:input
+        <x-daisyui.input
             wire:model="password"
             id="password"
             label="{{ __('Password') }}"
@@ -52,6 +52,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
             required
             autocomplete="new-password"
             placeholder="Password"
+            :errors="$errors"
         />
 
         <x-daisyui.button variant="primary" type="submit" class="w-full">{{ __('Confirm') }}</x-daisyui.button>

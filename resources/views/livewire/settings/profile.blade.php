@@ -74,10 +74,28 @@ new class extends Component {
 
     <x-settings.layout heading="{{ __('Profile') }}" subheading="{{ __('Update your name and email address') }}">
         <form wire:submit="updateProfileInformation" class="my-6 w-full space-y-6">
-            <flux:input wire:model="name" label="{{ __('Name') }}" type="text" name="name" required autofocus autocomplete="name" />
+            <x-daisyui.input
+                class="input"
+                wire:model="name"
+                label="{{ __('Name') }}"
+                type="text"
+                name="name"
+                required
+                autofocus
+                autocomplete="name"
+                :errors="$errors"
+            />
 
             <div>
-                <flux:input wire:model="email" label="{{ __('Email') }}" type="email" name="email" required autocomplete="email" />
+                <x-daisyui.input
+                    wire:model="email"
+                    label="{{ __('Email') }}"
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    :errors="$errors"
+                />
 
                 @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
                     <div>

@@ -30,7 +30,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <form wire:submit="sendPasswordResetLink" class="flex flex-col gap-6">
         <!-- Email Address -->
-        <flux:input
+        <x-daisyui.input
             wire:model="email"
             label="{{ __('Email Address') }}"
             type="email"
@@ -38,6 +38,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
             required
             autofocus
             placeholder="email@example.com"
+            :errors="$errors"
         />
 
         <x-daisyui.button variant="primary" type="submit" class="w-full">{{ __('Email password reset link') }}</x-daisyui.button>

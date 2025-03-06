@@ -76,7 +76,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <form wire:submit="resetPassword" class="flex flex-col gap-6">
         <!-- Email Address -->
-        <flux:input
+        <x-daisyui.input
             wire:model="email"
             id="email"
             label="{{ __('Email') }}"
@@ -84,10 +84,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
             name="email"
             required
             autocomplete="email"
+            :errors="$errors"
         />
 
         <!-- Password -->
-        <flux:input
+        <x-daisyui.input
             wire:model="password"
             id="password"
             label="{{ __('Password') }}"
@@ -96,10 +97,11 @@ new #[Layout('components.layouts.auth')] class extends Component {
             required
             autocomplete="new-password"
             placeholder="Password"
+            :errors="$errors"
         />
 
         <!-- Confirm Password -->
-        <flux:input
+        <x-daisyui.input
             wire:model="password_confirmation"
             id="password_confirmation"
             label="{{ __('Confirm password') }}"
@@ -108,6 +110,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
             required
             autocomplete="new-password"
             placeholder="Confirm password"
+            :errors="$errors"
         />
 
         <div class="flex items-center justify-end">

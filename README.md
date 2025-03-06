@@ -64,6 +64,7 @@ The following components are available:
 | `x-daisyui.link`         | `flux:link`                       |                                                            |
 | `x-daisyui.heading`      | `flux:heading`, `flux:subheading` | Can be used for both headings.                             |
 | `x-daisyui.separator`    | `flux:separator`                  | `variant` behaves differently; `direction`, `align` added. |
+| `x-daisyui.input`        | `flux:input`                      | Needs $errors to be passed explicitly.                     |
 
 In addition to the explicit attributes (like `variant` and `align`), you can pass in any daisyUI or Tailwind CSS class
 name and it will be applied to the component. Other HTML attributes will also be passed as-is.

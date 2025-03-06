@@ -42,7 +42,7 @@ new class extends Component {
 
     <x-settings.layout heading="{{ __('Update password') }}" subheading="{{ __('Ensure your account is using a long, random password to stay secure') }}">
         <form wire:submit="updatePassword" class="mt-6 space-y-6">
-            <flux:input
+            <x-daisyui.input
                 wire:model="current_password"
                 id="update_password_current_passwordpassword"
                 label="{{ __('Current password') }}"
@@ -50,8 +50,9 @@ new class extends Component {
                 name="current_password"
                 required
                 autocomplete="current-password"
+                :errors="$errors"
             />
-            <flux:input
+            <x-daisyui.input
                 wire:model="password"
                 id="update_password_password"
                 label="{{ __('New password') }}"
@@ -59,8 +60,9 @@ new class extends Component {
                 name="password"
                 required
                 autocomplete="new-password"
+                :errors="$errors"
             />
-            <flux:input
+            <x-daisyui.input
                 wire:model="password_confirmation"
                 id="update_password_password_confirmation"
                 label="{{ __('Confirm Password') }}"
@@ -68,6 +70,7 @@ new class extends Component {
                 name="password_confirmation"
                 required
                 autocomplete="new-password"
+                :errors="$errors"
             />
 
             <div class="flex items-center gap-4">
