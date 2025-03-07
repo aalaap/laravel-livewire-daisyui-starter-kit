@@ -56,18 +56,19 @@ Docs specific to this starter kit will be included here.
 
 The following components are available:
 
-| daisyUI                   | Flux                              | Note                                                       |
-| ------------------------- | --------------------------------- | ---------------------------------------------------------- |
-| `x-daisyui.navlist`       | `flux:navlist`                    |                                                            |
-| `x-daisyui.navlist-item`  | `flux:navitem`                    |                                                            |
-| `x-daisyui.button`        | `flux:button`                     |                                                            |
-| `x-daisyui.link`          | `flux:link`                       |                                                            |
-| `x-daisyui.heading`       | `flux:heading`, `flux:subheading` | Can be used for both headings.                             |
-| `x-daisyui.separator`     | `flux:separator`                  | `variant` behaves differently; `direction`, `align` added. |
-| `x-daisyui.input`         | `flux:input`                      | Needs $errors to be passed explicitly.                     |
-| `x-daisyui.modal`         | `flux:modal`                      | Works differently                                          |
-| `x-daisyui.modal.toggle`  | `flux:modal.trigger`              | Works differently                                          |
-| `x-daisyui.modal.actions` | `flux:modal.close`                | Works differently                                          |
+| daisyUI                     | Flux                              | Note                                                       |
+| --------------------------- | --------------------------------- | ---------------------------------------------------------- |
+| `x-daisyui.navlist`         | `flux:navlist`                    |                                                            |
+| `x-daisyui.navlist-item`    | `flux:navitem`                    |                                                            |
+| `x-daisyui.button`          | `flux:button`                     |                                                            |
+| `x-daisyui.link`            | `flux:link`                       |                                                            |
+| `x-daisyui.heading`         | `flux:heading`, `flux:subheading` | Can be used for both headings.                             |
+| `x-daisyui.separator`       | `flux:separator`                  | `variant` behaves differently; `direction`, `align` added. |
+| `x-daisyui.input`           | `flux:input`                      | Needs $errors to be passed explicitly.                     |
+| `x-daisyui.modal`           | `flux:modal`                      | Works differently                                          |
+| `x-daisyui.modal.toggle`    | `flux:modal.trigger`              | Works differently                                          |
+| `x-daisyui.modal.actions`   | `flux:modal.close`                | Works differently                                          |
+| `x-daisyui.loading-spinner` |                                   |                                                            |
 
 In addition to the explicit attributes (like `variant` and `align`), you can pass in any daisyUI or Tailwind CSS class
 name and it will be applied to the component. Other HTML attributes will also be passed as-is.

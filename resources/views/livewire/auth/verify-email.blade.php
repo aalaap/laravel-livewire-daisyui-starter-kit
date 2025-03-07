@@ -47,6 +47,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <div class="flex flex-col items-center justify-between space-y-3">
         <x-daisyui.button wire:click="sendVerification" variant="primary" class="w-full">
+            <x-daisyui.loading-spinner/>
             {{ __('Resend verification email') }}
         </x-daisyui.button>
 

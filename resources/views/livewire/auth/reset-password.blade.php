@@ -115,6 +115,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
         <div class="flex items-center justify-end">
             <x-daisyui.button type="submit" variant="primary" class="w-full">
+                <x-daisyui.loading-spinner/>
                 {{ __('Reset password') }}
             </x-daisyui.button>
         </div>

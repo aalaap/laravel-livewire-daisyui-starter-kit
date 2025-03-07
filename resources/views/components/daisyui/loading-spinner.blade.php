@@ -1,0 +1,1 @@
+<span wire:loading.class='loading loading-spinner' {{ $attributes }}></span>

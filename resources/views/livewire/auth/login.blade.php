@@ -116,7 +116,10 @@ new #[Layout('components.layouts.auth')] class extends Component {
         <flux:checkbox wire:model="remember" label="{{ __('Remember me') }}" />
 
         <div class="flex items-center justify-end">
-            <x-daisyui.button variant="primary" type="submit" class="w-full">{{ __('Log in') }}</x-daisyui.button>
+            <x-daisyui.button variant="primary" type="submit" class="w-full">
+                <x-daisyui.loading-spinner/>
+                {{ __('Log in') }}
+            </x-daisyui.button>
         </div>
     </form>
 

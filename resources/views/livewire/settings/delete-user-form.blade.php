@@ -55,7 +55,9 @@ new class extends Component {
             <x-daisyui.modal.actions>              
                 <x-daisyui.modal.toggle name="delete_account" variant="success">{{ __('Keep account') }}</x-daisyui.modal.toggle>
 
-                <x-daisyui.button variant="error" type="submit">{{ __('Delete account') }}</x-daisyui.button>
+                <x-daisyui.button variant="error" type="submit">
+                    <x-daisyui.loading-spinner/>
+                    {{ __('Delete account') }}</x-daisyui.button>
             </x-daisyui.modal.actions>
         </form>
     </x-daisyui.modal>
