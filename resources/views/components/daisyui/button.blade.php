@@ -10,7 +10,12 @@
         btn
         btn-neutral
         btn-primary
+        btn-secondary
+        btn-accent
+        btn-info
+        btn-success
         btn-warning
+        btn-error
     ">
 </div>
 
@@ -22,7 +27,6 @@
     ]) }}
     {{ $attributes }}
     type={{ $type }} >
-    <span wire:loading.class='loading loading-spinner'></span>
     {{ $slot }}
 </button>
 
