@@ -22,45 +22,41 @@ new class extends Component {
     }
 }; ?>
 
+
 <section class="mt-10 space-y-6">
     <div class="relative mb-5">
         <x-daisyui.heading class="mb-2">{{ __('Delete account') }}</x-daisyui.heading>
         <x-daisyui.heading type="sub">{{ __('Delete your account and all of its resources') }}</x-daisyui.subheading>
     </div>
 
-    <flux:modal.trigger name="confirm-user-deletion">
-        <x-daisyui.button variant="warning" x-data="" x-on:click.prevent="$dispatch('open-modal', 'confirm-user-deletion')">
-            {{ __('Delete account') }}
-        </x-daisyui.button>
-        
-    </flux:modal.trigger>
+    <x-daisyui.modal.toggle name="delete_account" variant="warning">Delete account</x-daisyui.modal.toggle>
 
-    <flux:modal name="confirm-user-deletion" :show="$errors->isNotEmpty()" focusable class="max-w-lg">
-        <form wire:submit="deleteUser" class="space-y-6">
-            <div>
-                <x-daisyui.heading size="lg" class="mb-2">{{ __('Are you sure you want to delete your account?') }}</x-daisyui.heading>
+    <x-daisyui.modal name="delete_account" class="bg-warning">
+        <div>
+            <x-daisyui.heading size="lg" class="mb-2 text-warning-content">{{ __('Are you sure you want to delete your account?') }}</x-daisyui.heading>
 
-                <x-daisyui.heading type="sub">
-                    {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
-                </x-daisyui.heading>
-            </div>
+            <x-daisyui.heading type="sub" class="text-warning-content">
+                {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
+            </x-daisyui.heading>
+        </div>
 
+        <form wire:submit="deleteUser" >
             <x-daisyui.input
                 wire:model="password"
                 id="password"
                 label="{{ __('Password') }}"
                 type="password"
                 name="password"
+                required
                 :errors="$errors"
+                class="text-warning-content"
             />
 
-            <div class="flex justify-end space-x-2">
-                <flux:modal.close>
-                    <x-daisyui.button variant="neutral">{{ __('Cancel') }}</flux:x-daisyui.button>
-                </flux:modal.close>
+            <x-daisyui.modal.actions>              
+                <x-daisyui.modal.toggle name="delete_account" variant="success">{{ __('Keep account') }}</x-daisyui.modal.toggle>
 
-                <x-daisyui.button variant="warning" type="submit">{{ __('Delete account') }}</x-daisyui.button>
-            </div>
+                <x-daisyui.button variant="error" type="submit">{{ __('Delete account') }}</x-daisyui.button>
+            </x-daisyui.modal.actions>
         </form>
-    </flux:modal>
+    </x-daisyui.modal>
 </section>

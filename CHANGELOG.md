@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-03-07
+
+-   Added `x-daisyui.modal` and related components
+
 ## 2025-03-06
 
 -   Added `x-daisyui.input` component
