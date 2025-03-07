@@ -40,9 +40,9 @@ else finds it useful as well.
 
 ## Status
 
-This is a very new fork, so at the moment, all we have is pre-installed daisyUI and a redone welcome page. The eventual
-goal is to replace as many Flux components with the equivalent daisyUI alternatives as possible and finally removing
-Flux entirely.
+This is a very new fork, so at the moment there are a few components that have been replaced, but the main layout and
+themeing is still using Flux. The eventual goal is to replace as many Flux components with the equivalent daisyUI
+alternatives as possible and finally removing Flux entirely.
 
 ## Official Documentation
 
