@@ -17,8 +17,8 @@
                 </flux:navbar.item>
             </flux:navbar>
 
-            <flux:spacer />
-
+            <x-daisyui.spacer/>
+            
             <flux:navbar class="mr-1.5 space-x-0.5 py-0!">
                 <flux:tooltip content="Search" position="bottom">
                     <flux:navbar.item class="!h-10 [&>div>svg]:size-5" icon="magnifying-glass" href="#" label="Search" />
@@ -104,7 +104,7 @@
                 </flux:navlist.group>
             </flux:navlist>
 
-            <flux:spacer />
+            <x-daisyui.spacer/>
 
             <flux:navlist variant="outline">
                 <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">

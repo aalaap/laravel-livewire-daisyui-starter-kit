@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-03-08
+
+-   Added `x-daisyui.spacer` component
+
 ## 2025-03-07
 
 -   Added `x-daisyui.modal` and related components

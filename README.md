@@ -69,6 +69,7 @@ The following components are available:
 | `x-daisyui.modal.toggle`    | `flux:modal.trigger`              | Works differently                                          |
 | `x-daisyui.modal.actions`   | `flux:modal.close`                | Works differently                                          |
 | `x-daisyui.loading-spinner` |                                   |                                                            |
+| `x-daisyui-spacer`          | `flux:spacer`                     |                                                            |
 
 In addition to the explicit attributes (like `variant` and `align`), you can pass in any daisyUI or Tailwind CSS class
 name and it will be applied to the component. Other HTML attributes will also be passed as-is.

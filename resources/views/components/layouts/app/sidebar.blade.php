@@ -17,7 +17,7 @@
                 </flux:navlist.group>
             </flux:navlist>
 
-            <flux:spacer />
+            <x-daisyui.spacer/>
 
             <flux:navlist variant="outline">
                 <flux:navlist.item icon="folder-git-2" href="https://github.com/laravel/livewire-starter-kit" target="_blank">
@@ -79,7 +79,7 @@
         <flux:header class="lg:hidden">
             <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 
-            <flux:spacer />
+            <x-daisyui.spacer/>
 
             <flux:dropdown position="top" align="end">
                 <flux:profile
