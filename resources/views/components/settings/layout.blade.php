@@ -1,15 +1,16 @@
 <div class="flex items-start max-md:flex-col">
     <div class="mr-10 w-full pb-4 md:w-[220px]">
         <x-daisyui.navlist>
-            <x-daisyui.navlist-item href="{{ route('settings.profile') }}" wire:navigate>
-                {{ __('Profile') }}
+            {{-- wire:navigate here seems to cause problems with theme changing --}}
+            <x-daisyui.navlist-item href="{{ route('settings.profile') }}"  wire:current="menu-active" class="text-base">
+            {{ __('Profile') }}
             </x-daisyui.navlist-item>
 
-            <x-daisyui.navlist-item href="{{ route('settings.password') }}" wire:navigate>
+            <x-daisyui.navlist-item href="{{ route('settings.password') }}" wire:current="menu-active" class="text-base">
                 {{ __('Password') }}
             </x-daisyui.navlist-item>
 
-            <x-daisyui.navlist-item href="{{ route('settings.appearance') }}" wire:navigate>
+            <x-daisyui.navlist-item href="{{ route('settings.appearance') }}" wire:current="menu-active" class="text-base">
                 {{ __('Appearance') }}
             </x-daisyui.navlist-item>
         </x-daisyui.navlist>

@@ -112,8 +112,9 @@ new #[Layout('components.layouts.auth')] class extends Component {
             @endif
         </div>
 
-        <!-- Remember Me -->
-        <flux:checkbox wire:model="remember" label="{{ __('Remember me') }}" />
+        <div class="text-xs">
+            <input class="text-xs" type="checkbox" wire:model="remember" checked="checked" class="checkbox" /> <span class="text-xs">{{ __('Remember me') }}</span>
+        </div>
 
         <div class="flex items-center justify-end">
             <x-daisyui.button variant="primary" type="submit" class="w-full">

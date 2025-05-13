@@ -6,7 +6,7 @@
 
 @php
     $tag = isset($level) ? 'h'.$level : 'div';
-    $font_weight = (isset($type) && $type == 'sub') ? '/70' : ' font-medium';
+    $font_weight = (isset($type) && $type == 'sub') ? 'font-bold' : ' font-black';
 @endphp
 
 @unless(true)
@@ -19,7 +19,10 @@
         text-lg
         text-xl
         text-2xl
+        text-3xl
         font-medium
+        font-bold
+        font-black
         text-base-content
         text-base-content/70
     "

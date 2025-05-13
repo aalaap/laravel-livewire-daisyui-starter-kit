@@ -1,13 +1,13 @@
-# Laravel + Livewire + daisyUI Starter Kit
+# Laravel + Livewire Starter Kit with daisyUI
 
 ## Introduction
 
-This [Laravel](https://laravel.com) + [Livewire](https://livewire.laravel.com) + [daisyUI](https://daisyui.com) starter
-kit provides a robust, modern starting point for building Laravel applications with a Livewire frontend and daisyUI
-components.
+This [Laravel](https://laravel.com) + [Livewire](https://livewire.laravel.com) starter kit with
+[daisyUI](https://daisyui.com) provides a robust, modern starting point for building Laravel applications with a
+Livewire frontend and daisyUI components.
 
 This Livewire starter kit utilizes Livewire 3, Laravel [Volt](https://livewire.laravel.com/docs/volt),
-[Folio](https://laravel.com/docs/12.x/folio), TypeScript, [Tailwind CSS](https://tailwindcss.com) 4 and daisyUI 5.
+[Folio](https://laravel.com/docs/12.x/folio), [Tailwind CSS](https://tailwindcss.com) 4 and daisyUI 5.
 
 Livewire is a powerful way of building dynamic, reactive, frontend UIs using just [PHP](https://php.net). It's a great
 fit for teams that primarily use Blade templates and are looking for a simpler alternative to JavaScript-driven SPA
@@ -40,9 +40,10 @@ else finds it useful as well.
 
 ## Status
 
-This is a very new fork, so at the moment there are a few components that have been replaced, but the main layout and
-themeing is still using Flux. The eventual goal is to replace as many Flux components with the equivalent daisyUI
-alternatives as possible and finally removing Flux entirely.
+All Flux components have been replaced by daisyUI component equivalents. The main app layouts are also using daisyUI,
+but there is still some optimization pending and some additional components and/or partials may be created.
+
+You can start using it now and create issues if you run into any problems.
 
 ## Official Documentation
 
@@ -91,4 +92,4 @@ all, please review and abide by the code.
 
 ## License
 
-The Laravel + Livewire + DaisyUI starter kit is open-sourced software licensed under the MIT license.
+The Laravel + Livewire + daisyUI starter kit is open-sourced software licensed under the MIT license.

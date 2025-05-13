@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2025-05-13
+
+-   Replaced header and sidebar layouts with daisyUI equivalents
+-   Added full themeing and font choice support via appearance settings
+-   Added Blade Icons
+-   Many other changes
+-   All Flux packages and references finally removed
+
 ## 2025-03-08
 
 -   Added `x-daisyui.spacer` component
